@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+    <head>  
+        <title>Oh, Boy! JavaScript!</title> 
+        <script>
+            function calRadius() {
+            //input
+            var radius = document.getElementById("radiusIn").value;
+            //process
+            var volume = 4/3 * Math.PI * radius * radius * radius;
+
+            //output
+                document.getElementById("showRadius").innerHTML = "The volume of the sphere is: " + volume + " cubic feet.";
+            }
+        </script>
+    </head>
+	<body>
+        <h1>josephParrett</h1>
+
+        <p>Radius <input id="radiusIn" type="number" size="6"> feet</p>
+        <button type="button" onclick="calRadius()">Calculate</button>
+        <p id="showRadius"></p>
+        <p>majorHere</p>
+	</body>	
+</html>
